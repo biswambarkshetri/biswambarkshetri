@@ -1,0 +1,902 @@
+
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+							<style>
+								body {
+									background-color: white; /* Ensure the iframe has a white background */
+								}
+
+								
+							</style>
+                        </head>
+                        <body>
+                            <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biswambar Kshetri | Senior Principal Designer BIM-Structure @ Ramboll</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code&display=swap">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; text-decoration:none; border:none; outline:none; scroll-behavior:smooth; }
+:root {
+--bg-color:#0a0e17; --second-bg-color:#131820; --text-color:#e6f1ff; --text-soft:#8892b0;
+--main-color:#00e0ff; --accent-color:#ff2e9a; --ramboll-blue:#1F4E79;
+--gradient:linear-gradient(135deg,#00e0ff 0%,#7b2bff 50%,#ff2e9a 100%);
+--card-bg:rgba(255,255,255,0.03); --card-border:rgba(255,255,255,0.08);
+--glow:0 0 25px rgba(0,224,255,0.4);
+}
+.light-mode {
+--bg-color:#f5f7fa; --second-bg-color:#ffffff; --text-color:#1a1a2e; --text-soft:#555;
+--main-color:#6c43ff; --accent-color:#ff2e9a;
+--gradient:linear-gradient(135deg,#6c43ff 0%,#ff2e9a 100%);
+--card-bg:rgba(0,0,0,0.02); --card-border:rgba(0,0,0,0.08);
+--glow:0 0 25px rgba(108,67,255,0.3);
+}
+html { font-size:62.5%; overflow-x:hidden; }
+body { background:var(--bg-color); color:var(--text-color); transition:0.4s ease; overflow-x:hidden; }
+body::before, body::after { content:''; position:fixed; border-radius:50%; filter:blur(120px); opacity:0.25; z-index:-1; animation:float 15s ease-in-out infinite; }
+body::before { width:500px; height:500px; background:var(--main-color); top:-200px; left:-200px; }
+body::after { width:400px; height:400px; background:var(--accent-color); bottom:-150px; right:-150px; animation-delay:-7s; }
+@keyframes float { 0%,100% { transform:translate(0,0) scale(1); } 50% { transform:translate(100px,100px) scale(1.1); } }
+section { min-height:100vh; padding:10rem 9% 2rem; position:relative; }
+span { background:var(--gradient); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.heading { text-align:center; font-size:5rem; margin-bottom:5rem; font-weight:700; }
+.heading::after { content:''; display:block; width:80px; height:4px; background:var(--gradient); margin:1.5rem auto 0; border-radius:2px; }
+.section-subtitle { text-align:center; font-size:1.6rem; color:var(--text-soft); max-width:800px; margin:-3rem auto 5rem; line-height:1.7; }
+.btn { display:inline-block; padding:1.2rem 3rem; background:var(--gradient); background-size:200% auto; border-radius:4rem; box-shadow:var(--glow); font-size:1.6rem; color:#fff; letter-spacing:.1rem; font-weight:600; transition:0.5s ease; cursor:pointer; }
+.btn:hover { background-position:right center; transform:translateY(-3px); box-shadow:0 10px 30px rgba(0,224,255,0.5); }
+.btn i { margin-left:0.8rem; }
+.btn-outline { background:transparent; border:2px solid var(--main-color); color:var(--main-color); box-shadow:none; margin-left:1.5rem; }
+.btn-outline:hover { background:var(--main-color); color:var(--bg-color); box-shadow:var(--glow); }
+
+/* PDF DOWNLOAD CARD */
+.pdf-download-wrap { text-align:center; margin:3rem auto 4rem; max-width:900px; }
+.pdf-download-card { display:inline-flex; align-items:center; gap:2rem; padding:2rem 3rem; background:var(--card-bg); backdrop-filter:blur(10px); border:1px solid var(--card-border); border-radius:1.5rem; transition:0.4s ease; text-align:left; flex-wrap:wrap; justify-content:center; }
+.pdf-download-card:hover { transform:translateY(-5px); border-color:var(--main-color); box-shadow:var(--glow); }
+.pdf-icon { width:6rem; height:6rem; background:var(--gradient); border-radius:1rem; display:flex; align-items:center; justify-content:center; font-size:2.8rem; color:#fff; flex-shrink:0; }
+.pdf-info h4 { font-size:1.8rem; margin-bottom:0.4rem; color:var(--text-color); }
+.pdf-info p { font-size:1.3rem; color:var(--text-soft); }
+.pdf-btn-group { display:flex; gap:1rem; flex-wrap:wrap; }
+.pdf-btn { display:inline-flex; align-items:center; gap:0.6rem; padding:1rem 2rem; border-radius:3rem; font-size:1.3rem; font-weight:600; transition:0.3s; cursor:pointer; }
+.pdf-btn-primary { background:var(--gradient); color:#fff; box-shadow:var(--glow); }
+.pdf-btn-primary:hover { transform:translateY(-2px); }
+.pdf-btn-outline { background:transparent; border:2px solid var(--main-color); color:var(--main-color); }
+.pdf-btn-outline:hover { background:var(--main-color); color:var(--bg-color); }
+
+/* HEADER */
+header { position:fixed; top:0; left:0; width:100%; padding:1.8rem 4%; background:rgba(10,14,23,0.7); backdrop-filter:blur(20px); display:flex; justify-content:space-between; align-items:center; z-index:100; border-bottom:1px solid var(--card-border); transition:0.3s; }
+.light-mode header { background:rgba(245,247,250,0.7); }
+.logo { font-size:2rem; color:var(--text-color); font-weight:800; letter-spacing:-0.5px; white-space:nowrap; }
+.logo span { background:var(--gradient); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+navbar { display:flex; align-items:center; flex-wrap:nowrap; white-space:nowrap; }
+navbar a { font-size:1.25rem; color:var(--text-color); margin-left:1.5rem; transition:0.3s; font-weight:500; position:relative; white-space:nowrap; }
+navbar a::after { content:''; position:absolute; bottom:-6px; left:0; width:0; height:2px; background:var(--gradient); transition:width 0.3s; }
+navbar a:hover::after, navbar a.active::after { width:100%; }
+navbar a:hover, navbar a.active { color:var(--main-color); }
+#darkMode-icon { font-size:2.2rem; color:var(--text-color); cursor:pointer; margin-left:2rem; transition:0.3s; }
+#darkMode-icon:hover { color:var(--main-color); transform:rotate(180deg); }
+#menu-icon { font-size:3.6rem; color:var(--text-color); cursor:pointer; display:none; }
+
+/* HOME */
+.home { display:flex; justify-content:space-between; align-items:center; gap:4rem; }
+.home-content .greeting { font-size:2rem; font-weight:500; color:var(--text-soft); margin-bottom:1rem; }
+.home-content h1 { font-size:5.5rem; font-weight:800; line-height:1.2; background:var(--gradient); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+.home-content .credentials { font-size:1.5rem; color:var(--main-color); font-weight:600; margin-top:0.8rem; letter-spacing:0.5px; }
+.home-content .role { font-size:2.6rem; font-weight:600; margin-top:1.5rem; }
+.home-content .company-badge { display:inline-flex; align-items:center; gap:1rem; margin-top:1.5rem; padding:0.8rem 1.5rem; background:var(--card-bg); border:1px solid var(--card-border); border-radius:3rem; font-size:1.4rem; backdrop-filter:blur(10px); }
+.company-badge i { color:var(--main-color); font-size:1.6rem; }
+.home-content p { font-size:1.6rem; margin-top:2rem; max-width:600px; line-height:1.8; color:var(--text-soft); }
+.quick-info { display:flex; gap:2rem; margin-top:2rem; flex-wrap:wrap; }
+.quick-info-item { display:flex; align-items:center; gap:0.8rem; font-size:1.4rem; color:var(--text-soft); }
+.quick-info-item i { color:var(--main-color); font-size:1.6rem; }
+.social-media a { display:inline-flex; justify-content:center; align-items:center; width:4.5rem; height:4.5rem; background:var(--card-bg); backdrop-filter:blur(10px); border:1px solid var(--card-border); border-radius:50%; font-size:1.8rem; color:var(--main-color); margin:2.5rem 1rem 2.5rem 0; transition:0.4s ease; }
+.social-media a:hover { background:var(--gradient); color:#fff; transform:translateY(-5px) scale(1.1); box-shadow:var(--glow); border-color:transparent; }
+.home-img { position:relative; }
+.home-img::before { content:''; position:absolute; inset:-20px; background:var(--gradient); border-radius:50%; filter:blur(40px); opacity:0.5; z-index:-1; animation:pulse 4s ease-in-out infinite; }
+@keyframes pulse { 0%,100% { transform:scale(1); opacity:0.5; } 50% { transform:scale(1.05); opacity:0.7; } }
+.home-img img { width:30vw; max-width:420px; border-radius:50%; border:4px solid transparent; background:var(--gradient) border-box; object-fit:cover; animation:floatImg 6s ease-in-out infinite; }
+@keyframes floatImg { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-20px); } }
+.typed-text { font-family:'Fira Code',monospace; background:var(--gradient); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+.cursor { display:inline-block; background:var(--main-color); margin-left:0.2rem; width:3px; animation:blink 1s infinite; }
+@keyframes blink { 0%,49% { opacity:1; } 50%,100% { opacity:0; } }
+
+/* RAMBOLL */
+.ramboll-banner { background:linear-gradient(135deg,rgba(31,78,121,0.2) 0%,rgba(0,224,255,0.1) 100%); border:1px solid var(--card-border); border-radius:2rem; padding:4rem; margin:0 auto; max-width:1200px; backdrop-filter:blur(10px); }
+.ramboll-banner .banner-header { display:flex; align-items:center; gap:2rem; margin-bottom:3rem; flex-wrap:wrap; }
+.ramboll-logo { width:8rem; height:8rem; background:var(--gradient); border-radius:1.5rem; display:flex; align-items:center; justify-content:center; font-size:3rem; color:#fff; font-weight:800; flex-shrink:0; }
+.banner-header h3 { font-size:2.6rem; font-weight:700; margin-bottom:0.4rem; }
+.banner-header p { font-size:1.5rem; color:var(--text-soft); }
+.ramboll-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:2rem; }
+.ramboll-item { padding:1.5rem; background:var(--card-bg); border:1px solid var(--card-border); border-radius:1rem; transition:0.3s; }
+.ramboll-item:hover { border-color:var(--main-color); transform:translateY(-3px); }
+.ramboll-item strong { display:block; font-size:1.2rem; color:var(--main-color); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:0.5rem; }
+.ramboll-item span { font-size:1.4rem; color:var(--text-color); background:none; -webkit-text-fill-color:var(--text-color); }
+
+/* ABOUT */
+.about { display:flex; justify-content:center; align-items:center; gap:5rem; background:var(--second-bg-color); }
+.about-img { position:relative; flex-shrink:0; }
+.about-img::before { content:''; position:absolute; inset:-10px; background:var(--gradient); border-radius:2rem; filter:blur(30px); opacity:0.4; z-index:-1; }
+.about-img img { width:25vw; max-width:380px; border-radius:2rem; border:2px solid var(--card-border); }
+.about-content h2 { font-size:4.5rem; text-align:left; line-height:1.2; font-weight:700; margin-bottom:2rem; }
+.about-content p { font-size:1.75rem; margin-bottom:2rem; line-height:1.9; color:var(--text-soft); }
+.strengths { display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; margin-top:2rem; }
+.strength-item { display:flex; align-items:center; gap:1rem; font-size:1.55rem; color:var(--text-color); padding:0.4rem 0; }
+.strength-item i { color:var(--main-color); }
+
+/* TIMELINE */
+.timeline-row { display:flex; flex-wrap:wrap; gap:5rem; justify-content:center; }
+.timeline-column { flex:1 1 50rem; max-width:1000px; }
+.timeline-column .title { font-size:2.6rem; margin:0 0 3rem 2rem; font-weight:700; }
+.timeline-box { border-left:2px solid; border-image:var(--gradient) 1; padding-left:1rem; }
+.timeline-content { position:relative; padding-left:3rem; margin-bottom:3rem; }
+.timeline-content::before { content:''; position:absolute; top:1rem; left:-1.3rem; width:2rem; height:2rem; background:var(--gradient); border-radius:50%; box-shadow:0 0 15px var(--main-color); }
+.content { padding:2.5rem; background:var(--card-bg); backdrop-filter:blur(10px); border:1px solid var(--card-border); border-radius:1.5rem; transition:0.4s ease; }
+.content:hover { transform:translateY(-8px); border-color:var(--main-color); box-shadow:0 15px 40px rgba(0,224,255,0.15); }
+.content .year { display:inline-block; padding:0.4rem 1.2rem; font-size:1.3rem; background:rgba(0,224,255,0.1); color:var(--main-color); font-weight:600; border-radius:2rem; margin-bottom:1.2rem; }
+.content h3 { font-size:2rem; margin-bottom:0.5rem; font-weight:600; }
+.content h4 { font-size:1.5rem; color:var(--main-color); margin-bottom:1rem; font-weight:500; }
+.content p { font-size:1.4rem; line-height:1.7; color:var(--text-soft); margin-bottom:0.8rem; }
+.content ul { margin:1rem 0 0 1.5rem; }
+.content ul li { font-size:1.35rem; color:var(--text-soft); line-height:1.7; margin-bottom:0.4rem; }
+.content .project-tag { display:inline-block; margin:0.3rem 0.4rem 0.3rem 0; padding:0.3rem 0.8rem; background:rgba(255,46,154,0.1); color:var(--accent-color); font-size:1.2rem; border-radius:1rem; font-weight:500; }
+
+/* SKILLS */
+.skills-section { background:var(--bg-color); }
+.skills-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(450px,1fr)); gap:3rem; max-width:1200px; margin:0 auto; }
+.skill-category { padding:3rem; background:var(--card-bg); backdrop-filter:blur(10px); border:1px solid var(--card-border); border-radius:1.5rem; transition:0.4s ease; }
+.skill-category:hover { transform:translateY(-8px); border-color:var(--main-color); box-shadow:0 15px 40px rgba(0,224,255,0.15); }
+.skill-category h3 { font-size:2.2rem; margin-bottom:2rem; display:flex; align-items:center; gap:1rem; }
+.skill-category h3 i { color:var(--main-color); font-size:2.4rem; }
+.skill-bar { margin-bottom:1.8rem; }
+.skill-info { display:flex; justify-content:space-between; font-size:1.4rem; font-weight:500; margin-bottom:0.8rem; }
+.skill-info span:last-child { color:var(--main-color); background:none; -webkit-text-fill-color:var(--main-color); font-weight:600; }
+.bar-container { width:100%; height:0.8rem; background:rgba(255,255,255,0.05); border-radius:10px; overflow:hidden; }
+.bar-fill { height:100%; background:var(--gradient); width:0%; transition:width 1.8s cubic-bezier(0.1,1,0.1,1); border-radius:10px; box-shadow:0 0 10px var(--main-color); }
+.software-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:1.5rem; margin-top:4rem; }
+.software-item { padding:2rem 1rem; text-align:center; background:var(--card-bg); backdrop-filter:blur(10px); border:1px solid var(--card-border); border-radius:1rem; transition:0.3s ease; font-size:1.3rem; font-weight:500; }
+.software-item:hover { transform:translateY(-5px) scale(1.05); border-color:var(--main-color); color:var(--main-color); box-shadow:var(--glow); }
+.software-item i { display:block; font-size:2.5rem; color:var(--main-color); margin-bottom:0.8rem; }
+
+/* SECTORS / CARDS */
+.sectors-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:2rem; max-width:1200px; margin:0 auto; }
+.sector-card { padding:2.5rem; background:var(--card-bg); backdrop-filter:blur(10px); border:1px solid var(--card-border); border-radius:1.5rem; transition:0.4s; text-align:center; }
+.sector-card:hover { transform:translateY(-8px); border-color:var(--main-color); box-shadow:var(--glow); }
+.sector-icon { width:7rem; height:7rem; margin:0 auto 1.5rem; background:var(--gradient); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:2.8rem; color:#fff; }
+.sector-card h3 { font-size:1.8rem; margin-bottom:1rem; }
+.sector-card ul { list-style:none; padding:0; }
+.sector-card ul li { font-size:1.3rem; color:var(--text-soft); padding:0.4rem 0; border-bottom:1px dashed var(--card-border); }
+.sector-card ul li:last-child { border:none; }
+.sector-card ul li::before { content:'▸ '; color:var(--main-color); }
+
+/* PROJECTS */
+.portfolio-container { display:grid; grid-template-columns:repeat(auto-fit,minmax(330px,1fr)); gap:2.5rem; }
+.portfolio-box { position:relative; border-radius:1.5rem; overflow:hidden; background:var(--card-bg); border:1px solid var(--card-border); transition:0.4s ease; }
+.portfolio-box:hover { transform:translateY(-10px); border-color:var(--main-color); box-shadow:0 20px 50px rgba(0,224,255,0.25); }
+.portfolio-header { padding:2rem; background:var(--gradient); color:#fff; }
+.portfolio-header h4 { font-size:1.8rem; font-weight:700; margin-bottom:0.4rem; }
+.portfolio-header .location { font-size:1.3rem; opacity:0.9; }
+.portfolio-body { padding:2rem; }
+.portfolio-body p { font-size:1.35rem; color:var(--text-soft); line-height:1.6; margin-bottom:1rem; }
+.portfolio-body .meta { display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1rem; }
+.portfolio-body .role-tag { display:inline-block; padding:0.4rem 1rem; background:rgba(0,224,255,0.1); color:var(--main-color); font-size:1.2rem; font-weight:600; border-radius:1rem; }
+.portfolio-body .hours-tag { display:inline-block; padding:0.4rem 1rem; background:rgba(255,46,154,0.1); color:var(--accent-color); font-size:1.2rem; font-weight:600; border-radius:1rem; }
+.project-filter { text-align:center; margin-bottom:4rem; display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; }
+.filter-btn { padding:1rem 2rem; background:var(--card-bg); border:1px solid var(--card-border); border-radius:3rem; font-size:1.4rem; color:var(--text-color); cursor:pointer; transition:0.3s; font-family:'Poppins'; }
+.filter-btn:hover, .filter-btn.active { background:var(--gradient); color:#fff; border-color:transparent; }
+
+/* LANGUAGES */
+.languages-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; max-width:1100px; margin:0 auto; }
+.lang-card { padding:2.5rem; background:var(--card-bg); backdrop-filter:blur(10px); border:1px solid var(--card-border); border-radius:1.5rem; transition:0.4s; }
+.lang-card:hover { transform:translateY(-5px); border-color:var(--main-color); box-shadow:var(--glow); }
+.lang-card h4 { font-size:1.8rem; margin-bottom:0.5rem; display:flex; align-items:center; gap:1rem; }
+.lang-card .mother-tongue { display:inline-block; padding:0.2rem 0.8rem; background:var(--gradient); color:#fff; font-size:1.1rem; border-radius:1rem; margin-left:1rem; }
+.lang-skill { margin-top:1rem; }
+.lang-skill .label { display:flex; justify-content:space-between; font-size:1.3rem; margin-bottom:0.5rem; color:var(--text-soft); }
+.lang-dots { display:flex; gap:0.6rem; }
+.lang-dots .dot { width:1.4rem; height:1.4rem; border-radius:50%; background:rgba(255,255,255,0.1); border:1px solid var(--card-border); }
+.lang-dots .dot.filled { background:var(--gradient); border-color:transparent; box-shadow:0 0 8px var(--main-color); }
+
+/* CERTIFICATIONS */
+.cert-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:2rem; }
+.cert-item { display:flex; align-items:center; gap:1.5rem; padding:1.8rem; background:var(--card-bg); backdrop-filter:blur(10px); border:1px solid var(--card-border); border-radius:1rem; transition:0.3s ease; }
+.cert-item:hover { transform:translateX(8px); border-color:var(--main-color); box-shadow:var(--glow); }
+.cert-icon { width:5rem; height:5rem; display:flex; align-items:center; justify-content:center; background:var(--gradient); border-radius:50%; font-size:2rem; color:#fff; flex-shrink:0; }
+.cert-item h4 { font-size:1.5rem; font-weight:600; margin-bottom:0.3rem; }
+.cert-item p { font-size:1.25rem; color:var(--text-soft); }
+
+/* STATS */
+.stats-container { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:2rem; max-width:1300px; margin:0 auto 5rem; }
+.stat-card { padding:3rem 2rem; text-align:center; background:var(--card-bg); backdrop-filter:blur(10px); border:1px solid var(--card-border); border-radius:1.5rem; transition:0.4s ease; }
+.stat-card:hover { transform:translateY(-8px); border-color:var(--main-color); box-shadow:var(--glow); }
+.stat-card i { font-size:3.5rem; color:var(--main-color); margin-bottom:1.5rem; }
+.stat-card h3 { font-size:4rem; font-weight:800; background:var(--gradient); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+.stat-card p { font-size:1.4rem; color:var(--text-soft); margin-top:0.5rem; }
+
+/* CONTACT */
+.contact { background:var(--second-bg-color); }
+.contact-container { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:2.5rem; max-width:1200px; margin:0 auto; }
+.contact-card { display:flex; align-items:center; gap:1.5rem; padding:2.5rem; background:var(--card-bg); backdrop-filter:blur(10px); border:1px solid var(--card-border); border-radius:1.5rem; transition:0.4s ease; }
+.contact-card:hover { transform:translateY(-8px); border-color:var(--main-color); box-shadow:var(--glow); }
+.contact-icon { width:6rem; height:6rem; display:flex; align-items:center; justify-content:center; background:var(--gradient); border-radius:50%; font-size:2.4rem; color:#fff; flex-shrink:0; }
+.contact-card h4 { font-size:1.4rem; color:var(--text-soft); font-weight:500; margin-bottom:0.3rem; }
+.contact-card p, .contact-card a { font-size:1.5rem; color:var(--text-color); font-weight:600; word-break:break-word; }
+.contact-card a:hover { color:var(--main-color); }
+.personal-info { margin:5rem auto 0; padding:3rem; background:var(--card-bg); backdrop-filter:blur(10px); border:1px solid var(--card-border); border-radius:1.5rem; max-width:1200px; }
+.personal-info h3 { font-size:2.2rem; margin-bottom:2rem; text-align:center; }
+.info-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1.5rem; }
+.info-item { padding:1.2rem; border-bottom:1px solid var(--card-border); }
+.info-item strong { display:block; font-size:1.2rem; color:var(--main-color); margin-bottom:0.4rem; text-transform:uppercase; letter-spacing:0.5px; }
+.info-item span { font-size:1.45rem; color:var(--text-color); background:none; -webkit-text-fill-color:var(--text-color); }
+
+/* FOOTER */
+footer { padding:4rem 9% 2rem; background:var(--second-bg-color); border-top:1px solid var(--card-border); }
+.footer-top { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:2rem; margin-bottom:2rem; }
+footer p { font-size:1.4rem; color:var(--text-soft); }
+.footer-brand { font-size:1.8rem; color:var(--text-color); font-weight:700; }
+.footer-brand span { background:var(--gradient); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+.footer-iconTop a { display:inline-flex; padding:1rem; background:var(--gradient); border-radius:0.8rem; transition:0.5s; }
+.footer-iconTop a:hover { transform:translateY(-5px); box-shadow:var(--glow); }
+.footer-iconTop a i { font-size:2.4rem; color:#fff; }
+.footer-bottom { text-align:center; padding-top:2rem; border-top:1px solid var(--card-border); }
+.footer-bottom p { font-size:1.3rem; }
+.footer-bottom .dev-credit { margin-top:0.5rem; font-size:1.2rem; color:var(--main-color); }
+.footer-bottom .dev-credit i { color:var(--accent-color); }
+
+/* RESPONSIVE */
+@media (max-width:1200px) { html { font-size:55%; } }
+@media (max-width:991px) {
+  header { padding:2rem 4%; }
+  section { padding:10rem 4% 2rem; }
+  .home { flex-direction:column-reverse; text-align:center; }
+  .home-content h1 { font-size:4.5rem; }
+  .home-img img { width:55vw; margin-top:4rem; }
+  .about { flex-direction:column; text-align:center; padding:5rem 4%; }
+  .about-img img { width:50vw; }
+  .about-content h2 { text-align:center; }
+  .quick-info { justify-content:center; }
+  .strengths { grid-template-columns:1fr; text-align:left; }
+  .skills-grid { grid-template-columns:1fr; }
+}
+@media (max-width:768px) {
+  #menu-icon { display:block; }
+  navbar { position:absolute; top:100%; left:-100%; width:100%; padding:1rem 4%; background:var(--bg-color); backdrop-filter:blur(20px); border-top:1px solid var(--card-border); flex-direction:column; align-items:flex-start; transition:0.25s ease; max-height:80vh; overflow-y:auto; }
+  navbar.active { left:0; }
+  navbar a { display:block; font-size:1.6rem; margin:1.2rem 0; }
+  #darkMode-icon { position:absolute; right:8rem; top:2.6rem; margin:0; }
+  .heading { font-size:4rem; }
+  .home-content h1 { font-size:3.8rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">Biswambar<span>.</span>Kshetri</div>
+  <i class="fas fa-bars" id="menu-icon"></i>
+  <navbar>
+    <a href="#home" class="nav-link active">Home</a>
+    <a href="#ramboll" class="nav-link">Ramboll</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#forte" class="nav-link">Forte</a>
+    <a href="#sectors" class="nav-link">Sectors</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#competencies" class="nav-link">Competencies</a>
+    <a href="#qaqc" class="nav-link">QA/QC</a>
+    <a href="#tools" class="nav-link">Tools</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#education" class="nav-link">Education</a>
+    <a href="#certifications" class="nav-link">Certs</a>
+    <a href="#languages" class="nav-link">Languages</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <i class="fas fa-moon" id="darkMode-icon"></i>
+  </navbar>
+</header>
+
+<!-- HOME -->
+<section class="home" id="home">
+  <div class="home-content">
+    <p class="greeting">Hello, I'm 👋</p>
+    <h1>Biswambar Kshetri</h1>
+    <p class="credentials">B-Tech | CEng.(I) | AMIE | BIM Project Management (RICS)</p>
+    <h3 class="role">I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span></h3>
+    <div class="company-badge">
+      <i class="fas fa-building"></i>
+      <span style="background:none;-webkit-text-fill-color:var(--text-color);"><strong>Senior Principal Designer BIM-Structure</strong> @ Ramboll India</span>
+    </div>
+    <p>A dynamic BE Civil Engineering professional with <strong>9+ years</strong> of experience in BIM Modelling, BIM Design, and Engineering. Currently at <strong>Ramboll Buildings</strong>, supporting Denmark Buildings Advisory & Consultancy, delivering global projects across India, Denmark, UK & Middle East.</p>
+    <div class="quick-info">
+      <div class="quick-info-item"><i class="fas fa-map-marker-alt"></i> Gurugram, India</div>
+      <div class="quick-info-item"><i class="fas fa-briefcase"></i> 9+ Years Experience</div>
+      <div class="quick-info-item"><i class="fas fa-calendar"></i> 8 Years at Ramboll</div>
+    </div>
+    <div class="social-media">
+      <a href="mailto:biswambar1993@gmail.com" title="Personal Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/biswambar-kshetri/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://teams.microsoft.com/" target="_blank" title="MS Teams"><i class="fas fa-users"></i></a>
+      <a href="tel:+919038375227" title="Phone"><i class="fas fa-phone"></i></a>
+    </div>
+    <a href="assets/Biswambar_Kshetri_CV.pdf" class="btn" download="Biswambar_Kshetri_CV.pdf">Download CV <i class="fas fa-download"></i></a>
+    <a href="#contact" class="btn btn-outline">Contact Me <i class="fas fa-arrow-right"></i></a>
+  </div>
+  <div class="home-img">
+    <img src="assets/images/profile-home.jpg" alt="Biswambar Kshetri" onerror="this.src='https://via.placeholder.com/600x600/131820/00e0ff?text=BK'">
+  </div>
+</section>
+
+<!-- RAMBOLL PROFILE -->
+<section id="ramboll" style="padding:8rem 9% 6rem;min-height:auto;">
+  <h1 class="heading">Ramboll <span>Profile</span></h1>
+  <p class="section-subtitle">Official organizational position at Ramboll India.</p>
+  <div class="ramboll-banner">
+    <div class="banner-header">
+      <div class="ramboll-logo">R</div>
+      <div>
+        <h3>Ramboll India Private Limited</h3>
+        <p>Global Engineering, Architecture & Consultancy</p>
+      </div>
+    </div>
+    <div class="ramboll-grid">
+      <div class="ramboll-item"><strong>Position</strong><span>Senior Principal Designer BIM-Structure</span></div>
+      <div class="ramboll-item"><strong>Business Unit</strong><span>Ramboll Buildings</span></div>
+      <div class="ramboll-item"><strong>Area</strong><span>Buildings Advisory & Consultancy</span></div>
+      <div class="ramboll-item"><strong>Main Department</strong><span>Buildings Advisory & Consultancy</span></div>
+      <div class="ramboll-item"><strong>Department</strong><span>Buildings Advisory & Consultancy - Gurugram</span></div>
+      <div class="ramboll-item"><strong>Global Business Area</strong><span>Buildings</span></div>
+      <div class="ramboll-item"><strong>Spearhead</strong><span>Buildings Advisory & Consultancy</span></div>
+      <div class="ramboll-item"><strong>Office Location</strong><span>Floor-17, Bldg 5, Tower-B, DLF Cyber Terrace Phase-III, Gurugram</span></div>
+      <div class="ramboll-item"><strong>Area of Responsibility</strong><span>BIM Modelling, Scan to BIM, Precast & Steel Structure in Revit</span></div>
+      <div class="ramboll-item"><strong>Contact Me About</strong><span>Revit, Navisworks, Solibri, AutoCAD, MicroStation, Tekla, ACC, BIM PM</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-img">
+    <img src="assets/images/profile-about.jpg" alt="About Biswambar" onerror="this.src='https://via.placeholder.com/500x500/0a0e17/00e0ff?text=Biswambar'">
+  </div>
+  <div class="about-content">
+    <h2>About <span>Me</span></h2>
+    <p>I am a <strong>Senior Principal Designer BIM-Structure</strong> at Ramboll India, specializing in <strong>BIM Manager, BIM Lead, and BIM Coordinator</strong> responsibilities. With deep expertise in BIM Modelling, Scan to BIM, Precast & Steel Structures in Revit, I lead multidisciplinary teams across global projects.</p>
+    <p>My 9+ years of experience spans technically advanced projects including <strong>Buildings, Metro Stations, Bridges, Viaducts, Tunnels, Underground Structures, Healthcare,</strong> and <strong>Industrial</strong> sectors. I specialize in delivering Denmark-based projects from India through Ramboll's offshore delivery center.</p>
+    <div class="strengths">
+      <div class="strength-item"><i class="fas fa-check-circle"></i> Hard working & Result Oriented</div>
+      <div class="strength-item"><i class="fas fa-check-circle"></i> Leadership & Interactive Quality</div>
+      <div class="strength-item"><i class="fas fa-check-circle"></i> Motivating Nature</div>
+      <div class="strength-item"><i class="fas fa-check-circle"></i> Good Communication Skills</div>
+      <div class="strength-item"><i class="fas fa-check-circle"></i> Continuous Improvement</div>
+      <div class="strength-item"><i class="fas fa-check-circle"></i> Stress & Pressure Tolerance</div>
+    </div>
+  </div>
+</section>
+
+<!-- FORTE -->
+<section id="forte" style="background:var(--bg-color);">
+  <h1 class="heading">The Proficiency <span>Forte</span></h1>
+  <p class="section-subtitle">Core professional strengths that define my engineering and BIM expertise.</p>
+  <div class="sectors-grid">
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-user-graduate"></i></div><h3>Engineering Professional</h3><ul><li>Dynamic B-Tech in Civil Engineering</li><li>BIM Modelling & Design</li><li>Drawing & Draughting</li><li>Detail Engineering</li></ul></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-globe-americas"></i></div><h3>Global Team Leader</h3><ul><li>🇬🇧 United Kingdom</li><li>🇮🇳 India</li><li>🇸🇦 Middle East</li><li>🇩🇰 Denmark</li><li>🇳🇴 Norway</li><li>🇬🇱 Greenland</li></ul></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-industry"></i></div><h3>Multi-Sector Expertise</h3><ul><li>Buildings & Metro Stations</li><li>Bridge & Viaduct</li><li>Tunnel & Underground</li><li>Healthcare & Pharma</li><li>Aviation & Data Centres</li></ul></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-laptop-code"></i></div><h3>Tools & 2D/3D Mastery</h3><ul><li>AutoCAD - 2D & 3D Modelling</li><li>Revit - Advanced Modelling</li><li>Update BIM Library</li><li>Family Creation</li><li>Problem Solving in Revit</li></ul></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-robot"></i></div><h3>Software Development</h3><ul><li>AI-Integrated Engineering</li><li>Python Programming</li><li>pyRevit Custom Tools</li><li>C# Add-in Development</li><li>Automation to Save Hours</li></ul></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-chalkboard-teacher"></i></div><h3>Training & Mentorship</h3><ul><li>Revit Training for Juniors</li><li>Knowledge Sharing Sessions</li><li>BIM Best Practices</li><li>Continuous Development</li><li>Team Capability Building</li></ul></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats" style="padding:8rem 9% 4rem;min-height:auto;">
+  <div class="stats-container">
+    <div class="stat-card"><i class="fas fa-calendar-check"></i><h3>9+</h3><p>Years Experience</p></div>
+    <div class="stat-card"><i class="fas fa-building"></i><h3>8+</h3><p>Years at Ramboll</p></div>
+    <div class="stat-card"><i class="fas fa-globe-asia"></i><h3>8+</h3><p>Countries Served</p></div>
+    <div class="stat-card"><i class="fas fa-project-diagram"></i><h3>35+</h3><p>Major Projects</p></div>
+  </div>
+</section>
+
+<!-- SECTORS -->
+<section id="sectors" style="background:var(--second-bg-color);">
+  <h1 class="heading">Service <span>Sectors</span></h1>
+  <p class="section-subtitle">Specialized expertise across Buildings, Architecture, and Transport infrastructure.</p>
+  <div class="sectors-grid">
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-building"></i></div><h3>Buildings & Architecture</h3><ul><li>Architecture</li><li>Structural Engineering</li><li>Commercial Offices</li><li>Hospitals & Healthcare</li></ul></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-train"></i></div><h3>Rail & Metro</h3><ul><li>Railway Engineering</li><li>Metro Stations</li><li>Pedestrian Underpasses</li><li>Civil Works</li></ul></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-road"></i></div><h3>Bridge Engineering</h3><ul><li>Bridge Design</li><li>Viaducts</li><li>Tunnel Engineering</li><li>Underground Structures</li></ul></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-flask"></i></div><h3>Pharma & Lab</h3><ul><li>Pharmaceutical Facilities</li><li>QC Laboratories</li><li>Medical Device Production</li><li>BSL-3 Veterinary Buildings</li></ul></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-plane"></i></div><h3>Aviation & Energy</h3><ul><li>Airport Infrastructure</li><li>Transformer Stations</li><li>District Heating</li><li>Renewable Energy</li></ul></div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills-section" id="skills">
+  <h1 class="heading">My <span>Skills</span></h1>
+  <p class="section-subtitle">Combining technical expertise with project management and leadership skills.</p>
+  <div class="skills-grid">
+    <div class="skill-category">
+      <h3><i class="fas fa-cube"></i> Technical Expertise</h3>
+      <div class="skill-bar"><div class="skill-info"><span>Revit Family Creation</span><span>95%</span></div><div class="bar-container"><div class="bar-fill" data-percent="95%"></div></div></div>
+      <div class="skill-bar"><div class="skill-info"><span>BIM Modelling & Coordination</span><span>95%</span></div><div class="bar-container"><div class="bar-fill" data-percent="95%"></div></div></div>
+      <div class="skill-bar"><div class="skill-info"><span>Steel Structure Modelling</span><span>93%</span></div><div class="bar-container"><div class="bar-fill" data-percent="93%"></div></div></div>
+      <div class="skill-bar"><div class="skill-info"><span>Concrete Structure Modelling</span><span>93%</span></div><div class="bar-container"><div class="bar-fill" data-percent="93%"></div></div></div>
+      <div class="skill-bar"><div class="skill-info"><span>Precast Modelling</span><span>92%</span></div><div class="bar-container"><div class="bar-fill" data-percent="92%"></div></div></div>
+      <div class="skill-bar"><div class="skill-info"><span>Steel Detailing</span><span>90%</span></div><div class="bar-container"><div class="bar-fill" data-percent="90%"></div></div></div>
+      <div class="skill-bar"><div class="skill-info"><span>BIM Execution Plan (BEP)</span><span>90%</span></div><div class="bar-container"><div class="bar-fill" data-percent="90%"></div></div></div>
+    </div>
+    <div class="skill-category">
+      <h3><i class="fas fa-code"></i> Automation & Management</h3>
+      <div class="skill-bar"><div class="skill-info"><span>pyRevit Tool Development</span><span>85%</span></div><div class="bar-container"><div class="bar-fill" data-percent="85%"></div></div></div>
+      <div class="skill-bar"><div class="skill-info"><span>Dynamo Visual Programming</span><span>82%</span></div><div class="bar-container"><div class="bar-fill" data-percent="82%"></div></div></div>
+      <div class="skill-bar"><div class="skill-info"><span>Python for Revit API</span><span>78%</span></div><div class="bar-container"><div class="bar-fill" data-percent="78%"></div></div></div>
+      <div class="skill-bar"><div class="skill-info"><span>AI-Integrated Workflows</span><span>80%</span></div><div class="bar-container"><div class="bar-fill" data-percent="80%"></div></div></div>
+      <div class="skill-bar"><div class="skill-info"><span>ISO 19650 & CDE Management</span><span>88%</span></div><div class="bar-container"><div class="bar-fill" data-percent="88%"></div></div></div>
+      <div class="skill-bar"><div class="skill-info"><span>BIM Project Management (RICS)</span><span>90%</span></div><div class="bar-container"><div class="bar-fill" data-percent="90%"></div></div></div>
+      <div class="skill-bar"><div class="skill-info"><span>Team Leadership & Mentorship</span><span>92%</span></div><div class="bar-container"><div class="bar-fill" data-percent="92%"></div></div></div>
+    </div>
+  </div>
+
+  <h2 style="text-align:center;font-size:2.6rem;margin:6rem 0 1rem;">Software <span>Proficiency</span></h2>
+  <div class="software-grid">
+    <div class="software-item"><i class="fas fa-drafting-compass"></i>AutoCAD 2026</div>
+    <div class="software-item"><i class="fas fa-cube"></i>Revit 2026</div>
+    <div class="software-item"><i class="fab fa-python"></i>Python (pyRevit)</div>
+    <div class="software-item"><i class="fas fa-project-diagram"></i>Dynamo</div>
+    <div class="software-item"><i class="fas fa-tools"></i>Tekla</div>
+    <div class="software-item"><i class="fas fa-eye"></i>Enscape</div>
+    <div class="software-item"><i class="fas fa-cloud"></i>Autodesk Forma</div>
+    <div class="software-item"><i class="fas fa-microchip"></i>MicroStation</div>
+    <div class="software-item"><i class="fas fa-layer-group"></i>Navisworks Manage</div>
+    <div class="software-item"><i class="fas fa-pen-fancy"></i>Bluebeam</div>
+    <div class="software-item"><i class="fas fa-server"></i>ProjectWise</div>
+    <div class="software-item"><i class="fas fa-magic"></i>Ideate Automation</div>
+    <div class="software-item"><i class="fas fa-toolbox"></i>RTV Tools</div>
+    <div class="software-item"><i class="fas fa-check-square"></i>Solibri Checker</div>
+    <div class="software-item"><i class="fas fa-folder"></i>MS Office</div>
+  </div>
+</section>
+
+<!-- COMPETENCIES -->
+<section id="competencies">
+  <h1 class="heading">Core <span>Competencies</span></h1>
+  <p class="section-subtitle">Specialized expertise across BIM Management, Automation, Structural Modeling, and Engineering Design.</p>
+  <div class="sectors-grid">
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-sitemap"></i></div><h3>BIM Management</h3><ul><li>ISO 19650 Standards</li><li>Common Data Environments</li><li>BIM Strategy</li><li>BIM Execution Plans</li></ul></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-code"></i></div><h3>Automation & Programming</h3><ul><li>Custom pyRevit Tools</li><li>Dynamo Visual Programming</li><li>Python for Revit API</li><li>AI-Integrated Workflows</li></ul></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-cubes"></i></div><h3>Structural Modeling</h3><ul><li>Precast (Denmark Standards)</li><li>Steel Structures</li><li>Cast-in-Place Concrete</li><li>Timber Structures</li><li>Scan-to-BIM</li></ul></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-drafting-compass"></i></div><h3>Engineering Design</h3><ul><li>Metro Stations</li><li>Viaducts</li><li>Tunnels & Underground</li><li>Heavy Industrial</li></ul></div>
+  </div>
+</section>
+
+<!-- QA/QC -->
+<section id="qaqc" style="background:var(--second-bg-color);">
+  <h1 class="heading">BIM QA/QC & <span>Automation</span></h1>
+  <p class="section-subtitle">Ensuring quality, coordination, and continuous improvement through automated workflows.</p>
+  <div class="sectors-grid" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr));">
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-robot"></i></div><h3>Automated Model Audit</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Custom Python & pyRevit scripts for automated model auditing.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-clipboard-check"></i></div><h3>Revit QA Checklist</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Comprehensive QA checklists ensuring model integrity.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-file-alt"></i></div><h3>Documentation Quality</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Rigorous quality control for drawings, annotations, and schedules.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-project-diagram"></i></div><h3>ACC Workflow</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">End-to-end BIM coordination using Autodesk Construction Cloud.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-people-arrows"></i></div><h3>Interdisciplinary Coordination</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Bridging Architecture, Structure, and MEP disciplines.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-lightbulb"></i></div><h3>Knowledge Sharing</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Continuous improvement culture with lessons-learned documentation.</p></div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section id="tools" style="background:var(--bg-color);">
+  <h1 class="heading">Developed Tools & <span>Revit Add-ins</span></h1>
+  <p class="section-subtitle">The <strong>REC Biswambar Toolset</strong> — custom pyRevit ribbon developed for Ramboll Building Advisory & Consultancy. Enhances productivity through automation, standardization, and error reduction [1].</p>
+
+  <!-- PDF: Tools -->
+  <div class="pdf-download-wrap">
+    <div class="pdf-download-card">
+      <div class="pdf-icon"><i class="fas fa-file-pdf"></i></div>
+      <div class="pdf-info">
+        <h4>REC Biswambar Toolset — Full Presentation</h4>
+        <p>Complete technical presentation of all developed Revit add-ins</p>
+      </div>
+      <div class="pdf-btn-group">
+        <a href="assets/pdfs/BK_Revit_Tools_Presentation.pdf" target="_blank" class="pdf-btn pdf-btn-outline"><i class="fas fa-eye"></i> View PDF</a>
+        <a href="assets/pdfs/BK_Revit_Tools_Presentation.pdf" download class="pdf-btn pdf-btn-primary"><i class="fas fa-download"></i> Download</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="ramboll-banner" style="margin-bottom:5rem;">
+    <div class="banner-header">
+      <div class="ramboll-logo"><i class="fas fa-tools"></i></div>
+      <div><h3>REC Biswambar Ribbon</h3><p>Custom Autodesk Revit Toolset • Built on pyRevit</p></div>
+    </div>
+  </div>
+
+  <div class="sectors-grid" style="grid-template-columns:repeat(auto-fit,minmax(340px,1fr));">
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-clipboard-check"></i></div><h3>Audit Tools</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Apply standard view templates in bulk and validate template usage across views. Ensures consistent graphics and discipline standards [1].</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-ruler-combined"></i></div><h3>Grid Dimensioning</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Auto-create dimension strings along grids — eliminates manual click-by-click dimensioning and ensures consistent placement [1].</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-arrows-alt-v"></i></div><h3>Level Dimensioning</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Auto-dimension levels in sections/elevations. Quick level-to-level dimension tool saves hours in section drawing production [1].</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-cubes"></i></div><h3>Smart Element Dimensioning</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Auto-dimension columns, footings, slab edges (with openings), and walls to grids [1].</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-file-export"></i></div><h3>Export Loadable Families</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Batch-export all loadable families from the project — useful for family library management and project handover [1].</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-map-marker-alt"></i></div><h3>Place Element by Coordinates</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Place elements using X, Y, Z. Useful for survey points, MEP fixtures, or pile layouts. Reduces manual placement errors [1].</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-layer-group"></i></div><h3>Reassign Level</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Move elements between levels while preserving position. Fixes modeling errors and prevents geometry shift [1].</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-file-pdf"></i></div><h3>Sheet Exporter Pro+</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Advanced batch sheet exporter with intelligent naming and folder auto-organization.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-file-excel"></i></div><h3>Data Export (CSV & Excel)</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Export schedules to CSV/Excel with formatting preserved. Enables data analysis, BOQ preparation, and reporting [1].</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-vector-square"></i></div><h3>Auto Room Dimension</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Automatically dimensions all rooms in a view.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-chart-line"></i></div><h3>BIM Tracker Dashboard</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Real-time dashboard for BIM model health and coordination status.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-eraser"></i></div><h3>Clear BIM Status</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Batch-clear or reset BIM status parameters across selected elements.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-object-group"></i></div><h3>Combine Generic</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Merges multiple generic model elements into a consolidated family.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-clipboard-list"></i></div><h3>CreateQAViews</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Auto-generates standardized QA/QC views with filters and color schemes.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-users-cog"></i></div><h3>Workset Manager</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Advanced workset management — create, rename, reassign, and audit in bulk.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-filter"></i></div><h3>Filter Selection By Type</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Filter and isolate elements by family, type, category, or parameter values.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-link"></i></div><h3>Join / Disjoin</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Batch join/disjoin geometry — fixes QTO and volume calculation errors.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-file-code"></i></div><h3>JSON to Family</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Generate Revit families dynamically from structured JSON data.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-shield-alt"></i></div><h3>MasterQA</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Comprehensive QA engine with automated checks and standards compliance.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-exchange-alt"></i></div><h3>MIP to RFA</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Converts model in-place elements into loadable Revit families.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-map-pin"></i></div><h3>Pile Coords</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Extract, tag, and export pile coordinates automatically.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-ruler"></i></div><h3>QA Tolerance Check 3D</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Validates element positions in 3D against defined tolerance thresholds.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-th-large"></i></div><h3>View Creator</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Bulk-create plans, sections, elevations, and 3D views based on levels/grids.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-tasks"></i></div><h3>Set BIM Status</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Sets standardized BIM status parameters across selected elements.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-th"></i></div><h3>View Category Dashboard</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Interactive dashboard for visibility, filters, and overrides per category.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-stamp"></i></div><h3>Place Stamp</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Places QA stamps on drawings automatically for status tracking.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-fill-drip"></i></div><h3>Fill Check</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Validates fill patterns, material assignments, and hatch consistency.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-toggle-on"></i></div><h3>Toggle Stamp</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Show/hide QA stamps across sheets for review vs. publishing.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-share-square"></i></div><h3>Export All</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Bulk export of QA data, checklists, and reports.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-user-shield"></i></div><h3>QA Manager</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Central dashboard for QA assignments, review history, and sign-off.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-plus-square"></i></div><h3>Add QA Parameters</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">One-click setup of standardized QA shared parameters.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-list-check"></i></div><h3>Create Checklist</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Creates project-specific QA/QC checklists customizable by stage.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-code-branch"></i></div><h3>Add Revision</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Bulk-add revisions to sheets with auto clouding and schedule updates.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-eye"></i></div><h3>Toggle Visibility</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Rapidly toggle checklists, QA overlays, and review annotations.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-file-invoice"></i></div><h3>Export Report</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Generates formatted QA/QC review reports (PDF/Excel).</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-clipboard"></i></div><h3>Add Log Entry</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Timestamps QA activities for a full audit trail.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-door-open"></i></div><h3>Auto Place Door</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Automatically places doors in walls based on room layouts.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-window-maximize"></i></div><h3>Auto Place Window</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Automated window placement based on facade rules and sill parameters.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-square"></i></div><h3>CreateWallWindow</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Generates windows into wall assemblies with parametric control.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-window-restore"></i></div><h3>WallMaker Window</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Standardized wall-maker for Ramboll Denmark compliance.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-window-restore"></i></div><h3>WallMaker Window v2</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Enhanced iteration with expanded parameters and improved UI.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-th"></i></div><h3>Rename Grids</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Bulk-renames grids following alpha/numeric conventions.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-paint-roller"></i></div><h3>Room Finisher</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Auto-applies finish schedules to rooms based on type or template.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-grip-horizontal"></i></div><h3>Dado</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Creates dado openings and detailing across host walls.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-cube"></i></div><h3>Foundation Opening</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Places precise openings in foundations for services and drainage.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-vector-square"></i></div><h3>Room Opening Finisher</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Places and finishes openings within rooms.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-brush"></i></div><h3>Stucco Opening</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Generates stucco-finished opening details with layered walls.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-clone"></i></div><h3>Wall Panel Opening</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Creates precast wall panel openings with edge conditions.</p></div>
+    <div class="sector-card"><div class="sector-icon"><i class="fas fa-border-all"></i></div><h3>Auto Openings</h3><p style="font-size:1.35rem;color:var(--text-soft);line-height:1.7;">Master utility to auto-create openings across walls, floors, and roofs.</p></div>
+  </div>
+
+  <div class="ramboll-banner" style="margin-top:5rem;">
+    <div class="banner-header">
+      <div class="ramboll-logo"><i class="fas fa-star"></i></div>
+      <div><h3>Why Use the REC Biswambar Toolset?</h3><p>Real, measurable benefits [1]</p></div>
+    </div>
+    <div class="ramboll-grid">
+      <div class="ramboll-item"><strong>⏱ Time Savings</strong><span>Up to 60–70% on dimensioning tasks [1]</span></div>
+      <div class="ramboll-item"><strong>✅ Consistency</strong><span>Standardized output across projects [1]</span></div>
+      <div class="ramboll-item"><strong>🛡 Error Reduction</strong><span>Automated placement & checks [1]</span></div>
+      <div class="ramboll-item"><strong>📈 Scalability</strong><span>Built on pyRevit — easy to extend [1]</span></div>
+      <div class="ramboll-item"><strong>👥 Team Enablement</strong><span>Focus on design, not drafting [1]</span></div>
+      <div class="ramboll-item"><strong>🎯 Value Areas</strong><span>Complex grids, foundations, QA, family library [1]</span></div>
+    </div>
+  </div>
+
+  <div class="stats-container" style="margin-top:5rem;">
+    <div class="stat-card"><i class="fas fa-tools"></i><h3>49+</h3><p>Tools in REC Ribbons</p></div>
+    <div class="stat-card"><i class="fas fa-percentage"></i><h3>70%</h3><p>Time Saved</p></div>
+    <div class="stat-card"><i class="fab fa-python"></i><h3>pyRevit</h3><p>Framework Base</p></div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" style="background:var(--second-bg-color);">
+  <h1 class="heading">My <span>Experience</span></h1>
+  <p class="section-subtitle">Global engineering experience across leading international consultancies.</p>
+  <div class="timeline-row">
+    <div class="timeline-column" style="flex:1 1 100%;max-width:1000px;">
+      <h2 class="title">💼 Professional Journey</h2>
+      <div class="timeline-box">
+        <div class="timeline-content">
+          <div class="content">
+            <div class="year">Oct 2018 - Present</div>
+            <h3>Senior Principal Designer BIM-Structure</h3>
+            <h4>Ramboll India Pvt Limited | Gurugram</h4>
+            <p>Leading BIM Modelling, Scan to BIM, Precast & Steel Structure design in Revit for Denmark Buildings Advisory & Consultancy.</p>
+            <ul>
+              <li>BIM Project Coordinator for Danish & global projects</li>
+              <li>Managing teams of 7+ BIM modellers</li>
+              <li>Department: Buildings Advisory & Consultancy</li>
+            </ul>
+            <div style="margin-top:1.2rem;">
+              <span class="project-tag">Metroselskabet CRSH6 - Ny Ellebjerg</span>
+              <span class="project-tag">Sindalah Island - NEOM</span>
+              <span class="project-tag">LEGO KOM Campus</span>
+              <span class="project-tag">St Mary's Hospital, London</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-content">
+          <div class="content">
+            <div class="year">2017 - 2018</div>
+            <h3>BIM Designer</h3>
+            <h4>AECOM India Pvt Ltd</h4>
+            <p>Generation of 3D modelling of Podium & Building Block structures in Revit.</p>
+            <div style="margin-top:1rem;">
+              <span class="project-tag">The Hyde at Hendon, UK London</span>
+              <span class="project-tag">King Abdul Hussain Medical Centre</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h1 class="heading">Featured <span>Projects</span></h1>
+  <p class="section-subtitle">Major international and national projects across various sectors at Ramboll.</p>
+
+  <!-- PDF: Projects -->
+  <div class="pdf-download-wrap">
+    <div class="pdf-download-card">
+      <div class="pdf-icon"><i class="fas fa-file-pdf"></i></div>
+      <div class="pdf-info">
+        <h4>Complete Project Portfolio</h4>
+        <p>Detailed portfolio of all major projects — Denmark, UK, Saudi Arabia & more</p>
+      </div>
+      <div class="pdf-btn-group">
+        <a href="assets/pdfs/BK_Project_Portfolio.pdf" target="_blank" class="pdf-btn pdf-btn-outline"><i class="fas fa-eye"></i> View PDF</a>
+        <a href="assets/pdfs/BK_Project_Portfolio.pdf" download class="pdf-btn pdf-btn-primary"><i class="fas fa-download"></i> Download</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-filter">
+    <button class="filter-btn active" data-filter="all">All Projects</button>
+    <button class="filter-btn" data-filter="denmark">🇩🇰 Denmark</button>
+    <button class="filter-btn" data-filter="uk">🇬🇧 UK</button>
+    <button class="filter-btn" data-filter="saudi">🇸🇦 Saudi Arabia</button>
+    <button class="filter-btn" data-filter="india">🇮🇳 India</button>
+    <button class="filter-btn" data-filter="other">🌍 Other</button>
+  </div>
+  <div class="portfolio-container">
+    <div class="portfolio-box" data-category="denmark"><div class="portfolio-header"><h4>Vesterbro Ungdomsgård</h4><p class="location"><i class="fas fa-map-marker-alt"></i> Denmark | 2026-2027</p></div><div class="portfolio-body"><p><strong>Client:</strong> Københavns Kommune</p><p>Fire safety assessments of a basement music room.</p><div class="meta"><span class="role-tag">€2.25L</span><span class="hours-tag">12 Hours</span></div></div></div>
+    <div class="portfolio-box" data-category="denmark"><div class="portfolio-header"><h4>BOFA 210 - Ringparken</h4><p class="location"><i class="fas fa-map-marker-alt"></i> South Jutland | 2026-2030</p></div><div class="portfolio-body"><p><strong>Client:</strong> Boligkontoret Fredericia</p><p>Design, tendering, and renovation of public housing.</p><div class="meta"><span class="role-tag">€9.94L</span><span class="hours-tag">40 Hours</span></div></div></div>
+    <div class="portfolio-box" data-category="uk"><div class="portfolio-header"><h4>St Mary's Hospital</h4><p class="location"><i class="fas fa-map-marker-alt"></i> London, UK | 2025-2026</p></div><div class="portfolio-body"><p><strong>Client:</strong> Imperial College Healthcare NHS Trust</p><p>Feasibility Works including surveys and BIM modelling.</p><div class="meta"><span class="role-tag">£53.6L</span><span class="hours-tag">148 Hours</span></div></div></div>
+    <div class="portfolio-box" data-category="denmark"><div class="portfolio-header"><h4>NPV Psychiatry</h4><p class="location"><i class="fas fa-map-marker-alt"></i> Viborg, Denmark | 2025-2026</p></div><div class="portfolio-body"><p><strong>Client:</strong> Region Midtjylland</p><p>15,000m² psychiatry facility — 96 beds.</p><div class="meta"><span class="role-tag">€66.18L</span><span class="hours-tag">20 Hours</span></div></div></div>
+    <div class="portfolio-box" data-category="denmark"><div class="portfolio-header"><h4>DSB FA & VKO</h4><p class="location"><i class="fas fa-map-marker-alt"></i> København | 2021-2026</p></div><div class="portfolio-body"><p><strong>Client:</strong> DSB Vedligehold A/S</p><p>Facilities & Maintenance for Danish State Railways.</p><div class="meta"><span class="role-tag">€11.14L</span><span class="hours-tag">232 Hours</span></div></div></div>
+    <div class="portfolio-box" data-category="denmark"><div class="portfolio-header"><h4>AAB Scanning & Modelling 2.0</h4><p class="location"><i class="fas fa-map-marker-alt"></i> Copenhagen | 2024-2025</p></div><div class="portfolio-body"><p><strong>Client:</strong> Boligforeningen AAB</p><p>Large-scale Scan to BIM project — 1,394 hours contribution.</p><div class="meta"><span class="role-tag">€3.85L</span><span class="hours-tag">1,394 Hours</span></div></div></div>
+    <div class="portfolio-box" data-category="denmark"><div class="portfolio-header"><h4>CITYRINGEN CRSH6 Phase 3</h4><p class="location"><i class="fas fa-map-marker-alt"></i> Copenhagen | 2024-2025</p></div><div class="portfolio-body"><p><strong>Client:</strong> Metroselskabet I/S</p><p>Copenhagen Metro Southern Harbour expansion.</p><div class="meta"><span class="role-tag">€78.94L</span><span class="hours-tag">32 Hours</span></div></div></div>
+    <div class="portfolio-box" data-category="india"><div class="portfolio-header"><h4>Noida International Airport</h4><p class="location"><i class="fas fa-map-marker-alt"></i> Noida, India | 2023-2024</p></div><div class="portfolio-body"><p><strong>Client:</strong> TATA Projects Ltd</p><p>Airside works for new Noida International Airport.</p><div class="meta"><span class="role-tag">₹7.77Cr</span><span class="hours-tag">52 Hours</span></div></div></div>
+    <div class="portfolio-box" data-category="saudi"><div class="portfolio-header"><h4>NEOM Sindalah Island 3B-3D</h4><p class="location"><i class="fas fa-map-marker-alt"></i> NEOM, Saudi Arabia | 2022</p></div><div class="portfolio-body"><p><strong>Client:</strong> NEOM Company</p><p>Flagship luxury destination — resort, marina, golf.</p><div class="meta"><span class="role-tag">€1.71Cr</span><span class="hours-tag">324 Hours</span></div></div></div>
+    <div class="portfolio-box" data-category="denmark"><div class="portfolio-header"><h4>LEGO KOM Campus</h4><p class="location"><i class="fas fa-map-marker-alt"></i> Billund | 2021-2024</p></div><div class="portfolio-body"><p><strong>Client:</strong> LEGO System A/S</p><p>Test & Innovation Center, Offices, Energy Center.</p><div class="meta"><span class="role-tag">€84.25L</span><span class="hours-tag">22 Hours</span></div></div></div>
+    <div class="portfolio-box" data-category="denmark"><div class="portfolio-header"><h4>SSI Building 217 (BSL-3)</h4><p class="location"><i class="fas fa-map-marker-alt"></i> Copenhagen | 2018-2021</p></div><div class="portfolio-body"><p><strong>Client:</strong> Statens Serum Institut</p><p>Veterinary preparedness building — BSL 3 labs.</p><div class="meta"><span class="role-tag">€63.25L</span><span class="hours-tag">18 Hours</span></div></div></div>
+    <div class="portfolio-box" data-category="other"><div class="portfolio-header"><h4>Steno Diabetes Center</h4><p class="location"><i class="fas fa-map-marker-alt"></i> Nuuk, Greenland 🇬🇱 | 2021-2026</p></div><div class="portfolio-body"><p><strong>Client:</strong> Permagreen Grønland A/S</p><p>Steno Diabetes Center in Greenland's capital.</p><div class="meta"><span class="role-tag">€5.79L</span><span class="hours-tag">104 Hours</span></div></div></div>
+    <div class="portfolio-box" data-category="other"><div class="portfolio-header"><h4>Stjørdal Health House</h4><p class="location"><i class="fas fa-map-marker-alt"></i> Stjørdal, Norway 🇳🇴 | 2019-2021</p></div><div class="portfolio-body"><p><strong>Client:</strong> Veidekke Entreprenør AS</p><p>Omsorg 2030 - 9,000 m² Health House Phase 2.</p><div class="meta"><span class="role-tag">€5.69L</span><span class="hours-tag">22 Hours</span></div></div></div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" style="background:var(--second-bg-color);">
+  <h1 class="heading">My <span>Education</span></h1>
+  <p class="section-subtitle">Academic foundations in Civil Engineering and Structural Draughting.</p>
+  <div class="timeline-row">
+    <div class="timeline-column" style="flex:1 1 100%;max-width:900px;">
+      <h2 class="title">🎓 Academic Journey</h2>
+      <div class="timeline-box">
+        <div class="timeline-content"><div class="content"><div class="year">2014 - 2017</div><h3>B-Tech in Civil Engineering</h3><h4>Biju Patnaik University of Technology (Indotech College)</h4><p>Bachelor of Technology specializing in Civil Engineering.</p></div></div>
+        <div class="timeline-content"><div class="content"><div class="year">2011 - 2013</div><h3>Diploma in Civil Engineering</h3><h4>Aryan Institute of Engineering & Technology, Bhubaneswar</h4><p>SCTE&VT, Odisha diploma program.</p></div></div>
+        <div class="timeline-content"><div class="content"><div class="year">2008 - 2010</div><h3>ITI - Draughtsman (Civil & Structural)</h3><h4>Government ITI, Khapuria, Cuttack</h4><p>Certification in Civil & Structural Draughtsmanship.</p></div></div>
+        <div class="timeline-content"><div class="content"><div class="year">2008</div><h3>Matriculation</h3><h4>A.N. High School, Narsinghpur (BSE Odisha)</h4><p>Board of Secondary Education, Odisha.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <h1 class="heading">Professional <span>Certifications</span></h1>
+  <p class="section-subtitle">BIM and professional certifications from RICS, Red Vector, AECOM University, IIBF, and more.</p>
+
+  <!-- PDF: Certifications -->
+  <div class="pdf-download-wrap">
+    <div class="pdf-download-card">
+      <div class="pdf-icon"><i class="fas fa-file-pdf"></i></div>
+      <div class="pdf-info">
+        <h4>All Certifications — Consolidated PDF</h4>
+        <p>Complete bundle of all professional certifications & memberships</p>
+      </div>
+      <div class="pdf-btn-group">
+        <a href="assets/pdfs/BK_All_Certifications.pdf" target="_blank" class="pdf-btn pdf-btn-outline"><i class="fas fa-eye"></i> View PDF</a>
+        <a href="assets/pdfs/BK_All_Certifications.pdf" download class="pdf-btn pdf-btn-primary"><i class="fas fa-download"></i> Download</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="cert-grid">
+    <div class="cert-item"><div class="cert-icon"><i class="fas fa-award"></i></div><div><h4>BIM - Project Management</h4><p>2020 - RICS</p></div></div>
+    <div class="cert-item"><div class="cert-icon"><i class="fas fa-university"></i></div><div><h4>Business Correspondents / Facilitators</h4><p>2022 - IIBF | Sr. No. 236667</p></div></div>
+    <div class="cert-item"><div class="cert-icon"><i class="fas fa-balance-scale"></i></div><div><h4>RVO ESMA Primary Membership</h4><p>2023 - RVO Estate Managers Foundation</p></div></div>
+    <div class="cert-item"><div class="cert-icon"><i class="fas fa-certificate"></i></div><div><h4>Chartered Engineer (India)</h4><p>CEng.(I) - Institution of Engineers</p></div></div>
+    <div class="cert-item"><div class="cert-icon"><i class="fas fa-medal"></i></div><div><h4>AMIE</h4><p>Associate Member - Institution of Engineers</p></div></div>
+    <div class="cert-item"><div class="cert-icon"><i class="fas fa-user-cog"></i></div><div><h4>BIM Roles and Responsibilities</h4><p>2018 - Global E-Learning</p></div></div>
+    <div class="cert-item"><div class="cert-icon"><i class="fas fa-hard-hat"></i></div><div><h4>BIM for Contractors</h4><p>2017 - Red Vector</p></div></div>
+    <div class="cert-item"><div class="cert-icon"><i class="fas fa-tools"></i></div><div><h4>BIM Tools</h4><p>2017 - Red Vector & AECOM University</p></div></div>
+    <div class="cert-item"><div class="cert-icon"><i class="fas fa-book"></i></div><div><h4>BIM - An Introduction</h4><p>2017 - Red Vector & AECOM University</p></div></div>
+    <div class="cert-item"><div class="cert-icon"><i class="fas fa-shield-alt"></i></div><div><h4>BIM Use and Risk Management</h4><p>2017 - Red Vector & AECOM University</p></div></div>
+    <div class="cert-item"><div class="cert-icon"><i class="fas fa-building"></i></div><div><h4>BIM for Owners & Facility Managers</h4><p>2017 - Red Vector & AECOM University</p></div></div>
+    <div class="cert-item"><div class="cert-icon"><i class="fas fa-star"></i></div><div><h4>BIM Essentials</h4><p>2017 - Red Vector & AECOM University</p></div></div>
+    <div class="cert-item"><div class="cert-icon"><i class="fas fa-drafting-compass"></i></div><div><h4>BIM for Architects & Engineers</h4><p>2017 - Red Vector & AECOM University</p></div></div>
+    <div class="cert-item"><div class="cert-icon"><i class="fas fa-file-contract"></i></div><div><h4>BIM - Employers Info Requirements</h4><p>EIR Documentation & Standards</p></div></div>
+    <div class="cert-item"><div class="cert-icon"><i class="fas fa-database"></i></div><div><h4>BIM - COBie</h4><p>Construction Ops Info Exchange</p></div></div>
+    <div class="cert-item"><div class="cert-icon"><i class="fas fa-cloud-upload-alt"></i></div><div><h4>Revit Publishing Cloud Models</h4><p>Cloud-Based Revit Workflows</p></div></div>
+    <div class="cert-item"><div class="cert-icon"><i class="fas fa-handshake"></i></div><div><h4>Collaboration for Revit (C4R)</h4><p>Cloud Collaboration</p></div></div>
+    <div class="cert-item"><div class="cert-icon"><i class="fas fa-laptop"></i></div><div><h4>ACC Field Overview</h4><p>Autodesk Construction Cloud - Field</p></div></div>
+    <div class="cert-item"><div class="cert-icon"><i class="fas fa-file-alt"></i></div><div><h4>ACC Docs Manual Approval</h4><p>ACC Document Workflows</p></div></div>
+  </div>
+</section>
+
+<!-- LANGUAGES -->
+<section id="languages" style="background:var(--second-bg-color);">
+  <h1 class="heading">Language <span>Skills</span></h1>
+  <p class="section-subtitle">Multilingual proficiency (1 - Basic | 5 - Excellent)</p>
+  <div class="languages-grid">
+    <div class="lang-card">
+      <h4>🇮🇳 Oriya <span class="mother-tongue">Mother Tongue</span></h4>
+      <div class="lang-skill"><div class="label"><span>Overall</span><span style="color:var(--main-color);">5/5</span></div><div class="lang-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span></div></div>
+    </div>
+    <div class="lang-card">
+      <h4>🇬🇧 English</h4>
+      <div class="lang-skill"><div class="label"><span>Overall</span><span style="color:var(--main-color);">4/5</span></div><div class="lang-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></div></div>
+    </div>
+    <div class="lang-card">
+      <h4>🇮🇳 Hindi</h4>
+      <div class="lang-skill"><div class="label"><span>Overall</span><span style="color:var(--main-color);">4/5</span></div><div class="lang-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></div></div>
+    </div>
+    <div class="lang-card">
+      <h4>🇧🇩 Bengali</h4>
+      <div class="lang-skill"><div class="label"><span>Overall</span><span style="color:var(--main-color);">2/5</span></div><div class="lang-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h1 class="heading">Get In <span>Touch</span></h1>
+  <p class="section-subtitle">Open to senior-level BIM Manager, BIM Lead, or BIM Coordinator opportunities globally.</p>
+  <div class="contact-container">
+    <div class="contact-card"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div><h4>Personal Email</h4><a href="mailto:biswambar1993@gmail.com">biswambar1993@gmail.com</a></div></div>
+    <div class="contact-card"><div class="contact-icon"><i class="fas fa-phone"></i></div><div><h4>Mobile</h4><a href="tel:+919038375227">+91 9038375227</a></div></div>
+    <div class="contact-card"><div class="contact-icon"><i class="fab fa-linkedin-in"></i></div><div><h4>LinkedIn</h4><a href="https://www.linkedin.com/in/biswambar-kshetri/" target="_blank" rel="noopener noreferrer">linkedin.com/in/biswambar-kshetri</a></div></div>
+    <div class="contact-card"><div class="contact-icon"><i class="fas fa-users"></i></div><div><h4>Microsoft Teams</h4><p>biswambar1993@outlook.com</p></div></div>
+    <div class="contact-card"><div class="contact-icon"><i class="fas fa-building"></i></div><div><h4>Office Location</h4><p style="font-size:1.3rem;line-height:1.5;">Floor-17, Bldg 5, Tower-B, DLF Cyber Terrace Phase-III, Gurugram - 122002, India</p></div></div>
+    <div class="contact-card"><div class="contact-icon"><i class="fas fa-home"></i></div><div><h4>Permanent Address</h4><p style="font-size:1.3rem;line-height:1.5;">AT/PO-Nuapatana, Via-Narsinghpur, Athagarh, Cuttack, Odisha-754032</p></div></div>
+  </div>
+
+  <div class="personal-info">
+    <h3>Personal <span>Dossier</span></h3>
+    <div class="info-grid">
+      <div class="info-item"><strong>Gender</strong><span>Male</span></div>
+      <div class="info-item"><strong>Nationality</strong><span>Indian 🇮🇳</span></div>
+      <div class="info-item"><strong>Languages</strong><span>English, Hindi, Oriya, Bengali</span></div>
+      <div class="info-item"><strong>Hobbies</strong><span>Net Surfing, Reading Books</span></div>
+      <div class="info-item"><strong>Career Goal</strong><span>BIM Manager</span></div>
+      <div class="info-item"><strong>Total Experience</strong><span>9 Years</span></div>
+      <div class="info-item"><strong>Years at Ramboll</strong><span>8 Years</span></div>
+      <div class="info-item"><strong>Country of Residence</strong><span>India</span></div>
+      <div class="info-item"><strong>Professional Title</strong><span>B-Tech, CEng(I), AMIE</span></div>
+      <div class="info-item"><strong>Membership</strong><span>Chartered Engineer (AMIE)</span></div>
+      <div class="info-item"><strong>Current Location</strong><span>Gurugram, India</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand">Biswambar<span>.</span>Kshetri</div>
+      <p style="margin-top:0.5rem;">Senior Principal Designer BIM-Structure @ Ramboll India</p>
+    </div>
+    <div class="footer-iconTop"><a href="#home"><i class="fas fa-angle-up"></i></a></div>
+  </div>
+  <div class="footer-bottom">
+    <p>Copyright &copy; 2026 <strong>Biswambar Kshetri</strong> | All Rights Reserved.</p>
+    <p class="dev-credit">Designed & Developed by <strong>Biswambar Kshetri</strong> <i class="fas fa-heart"></i> with pyRevit passion</p>
+  </div>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+const menuIcon = document.querySelector('#menu-icon');
+const navbar = document.querySelector('navbar');
+menuIcon.onclick = () => { menuIcon.classList.toggle('fa-xmark'); navbar.classList.toggle('active'); };
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('navbar a');
+window.onscroll = () => {
+  sections.forEach(sec => {
+    let top = window.scrollY, offset = sec.offsetTop - 150, height = sec.offsetHeight, id = sec.getAttribute('id');
+    if(top >= offset && top < offset + height) {
+      navLinks.forEach(links => links.classList.remove('active'));
+      const activeLink = document.querySelector('navbar a[href*=' + id + ']');
+      if(activeLink) activeLink.classList.add('active');
+    }
+  });
+  menuIcon.classList.remove('fa-xmark');
+  navbar.classList.remove('active');
+};
+const darkModeIcon = document.querySelector('#darkMode-icon');
+darkModeIcon.onclick = () => { darkModeIcon.classList.toggle('fa-sun'); document.body.classList.toggle('light-mode'); };
+const words = ["Senior Principal Designer BIM-Structure","BIM Project Coordinator","Scan to BIM Expert","BIM Manager","Civil Engineer","Revit Specialist","Automation Specialist","Developer - Revit Add-ins & Tools"];
+let wordIndex = 0, charIndex = 0, isDeleting = false;
+const typedTextSpan = document.querySelector(".typed-text");
+function type() {
+  const currentWord = words[wordIndex];
+  if (isDeleting) { typedTextSpan.textContent = currentWord.substring(0, charIndex - 1); charIndex--; }
+  else { typedTextSpan.textContent = currentWord.substring(0, charIndex + 1); charIndex++; }
+  let typeSpeed = isDeleting ? 50 : 120;
+  if (!isDeleting && charIndex === currentWord.length) { typeSpeed = 2000; isDeleting = true; }
+  else if (isDeleting && charIndex === 0) { isDeleting = false; wordIndex = (wordIndex + 1) % words.length; typeSpeed = 500; }
+  setTimeout(type, typeSpeed);
+}
+document.addEventListener("DOMContentLoaded", () => { setTimeout(type, 500); });
+const progressBars = document.querySelectorAll('.bar-fill');
+let animated = false;
+function showProgress() {
+  if(animated) return;
+  const skillSection = document.getElementById('skills');
+  if(skillSection.getBoundingClientRect().top < window.innerHeight / 1.2) {
+    progressBars.forEach(p => p.style.width = p.dataset.percent);
+    animated = true;
+  }
+}
+window.addEventListener('scroll', showProgress);
+window.addEventListener('load', showProgress);
+const counters = document.querySelectorAll('.stat-card h3');
+let countersAnimated = false;
+function animateCounters() {
+  if(countersAnimated) return;
+  const statsSection = document.getElementById('stats');
+  if(statsSection.getBoundingClientRect().top < window.innerHeight / 1.2) {
+    counters.forEach(counter => {
+      const target = parseInt(counter.innerText);
+      if(isNaN(target)) return;
+      let count = 0, increment = target / 50;
+      const update = () => {
+        count += increment;
+        if(count < target) { counter.innerText = Math.ceil(count) + '+'; requestAnimationFrame(update); }
+        else counter.innerText = target + '+';
+      };
+      update();
+    });
+    countersAnimated = true;
+  }
+}
+window.addEventListener('scroll', animateCounters);
+window.addEventListener('load', animateCounters);
+const filterBtns = document.querySelectorAll('.filter-btn');
+const projectBoxes = document.querySelectorAll('.portfolio-box');
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    projectBoxes.forEach(box => {
+      if(filter === 'all' || box.dataset.category === filter) {
+        box.style.display = 'block';
+        box.style.animation = 'floatImg 0.5s ease';
+      } else { box.style.display = 'none'; }
+    });
+  });
+});
+</script>
+</body>
+</html>
+
+							<script>
+                            	
+							</script>
+                        </body>
+                        </html>
+                    
